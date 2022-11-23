@@ -1,0 +1,25 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [1,2,3,4],\n\tmyVar2: \"hello from the other side\",\n\tmyFun1(lol=\"123\", pop=\"456\")  {\n\t\treturn \"** hey this is just a fun\";\n\t},\n\tmyFun2: async () => {\n\n\t\treturn Api1.run()\n\t}, \n\tgetStr() {\n\t\t\n\t\treturn Input1.text;\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[1, 2, 3, 4]"
+      },
+      {
+        "name": "myVar2",
+        "value": "\"hello from the other side\""
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Page1_JSObject1",
+  "deleted": false,
+  "gitSyncId": "6371f3abf494321301dcb512_637b597a6983426f24c9c983"
+}
