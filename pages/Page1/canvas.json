@@ -475,7 +475,7 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "{{JSObject1.getStr()}}",
+              "text": "{{JSObject1.showStr()}}",
               "key": "g0o1u3778m",
               "isDeprecated": false,
               "rightColumn": 33,
