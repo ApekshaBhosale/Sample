@@ -92,19 +92,16 @@
                   "key": "tableData"
                 },
                 {
-                  "key": "primaryColumns.status.computedValue"
+                  "key": "primaryColumns.username.computedValue"
                 },
                 {
-                  "key": "primaryColumns.gender.computedValue"
+                  "key": "primaryColumns.phone.computedValue"
                 },
                 {
-                  "key": "primaryColumns.avatar.computedValue"
+                  "key": "primaryColumns.website.computedValue"
                 },
                 {
-                  "key": "primaryColumns.createdAt.computedValue"
-                },
-                {
-                  "key": "primaryColumns.updatedAt.computedValue"
+                  "key": "primaryColumns.company.computedValue"
                 }
               ],
               "leftColumn": 12,
@@ -151,11 +148,10 @@
                 "name",
                 "email",
                 "address",
-                "status",
-                "gender",
-                "avatar",
-                "createdAt",
-                "updatedAt"
+                "username",
+                "phone",
+                "website",
+                "company"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -283,13 +279,13 @@
                   "validation": {},
                   "cellBackground": ""
                 },
-                "status": {
+                "username": {
                   "allowCellWrapping": false,
                   "index": 2,
                   "width": 150,
-                  "originalId": "status",
-                  "id": "status",
-                  "alias": "status",
+                  "originalId": "username",
+                  "id": "username",
+                  "alias": "username",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -304,20 +300,20 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "status",
+                  "label": "username",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"username\"]))}}",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "gender": {
+                "phone": {
                   "allowCellWrapping": false,
-                  "index": 3,
+                  "index": 5,
                   "width": 150,
-                  "originalId": "gender",
-                  "id": "gender",
-                  "alias": "gender",
+                  "originalId": "phone",
+                  "id": "phone",
+                  "alias": "phone",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -332,20 +328,20 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "gender",
+                  "label": "phone",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"gender\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"phone\"]))}}",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "avatar": {
+                "website": {
                   "allowCellWrapping": false,
-                  "index": 4,
+                  "index": 6,
                   "width": 150,
-                  "originalId": "avatar",
-                  "id": "avatar",
-                  "alias": "avatar",
+                  "originalId": "website",
+                  "id": "website",
+                  "alias": "website",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -360,23 +356,23 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "avatar",
+                  "label": "website",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"avatar\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"website\"]))}}",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "createdAt": {
+                "company": {
                   "allowCellWrapping": false,
                   "index": 7,
                   "width": 150,
-                  "originalId": "createdAt",
-                  "id": "createdAt",
-                  "alias": "createdAt",
+                  "originalId": "company",
+                  "id": "company",
+                  "alias": "company",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "date",
+                  "columnType": "text",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -388,38 +384,10 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "createdAt",
+                  "label": "company",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"createdAt\"]))}}",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "updatedAt": {
-                  "allowCellWrapping": false,
-                  "index": 8,
-                  "width": 150,
-                  "originalId": "updatedAt",
-                  "id": "updatedAt",
-                  "alias": "updatedAt",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "date",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "updatedAt",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"updatedAt\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"company\"]))}}",
                   "validation": {},
                   "cellBackground": ""
                 }
@@ -429,7 +397,7 @@
               "rightColumn": 49,
               "textSize": "0.875rem",
               "widgetId": "8fh2t7a7d7",
-              "tableData": "{{JSObject1.myFun2.data.users}}",
+              "tableData": "{{Api1.data}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -766,14 +734,11 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Page1_JSObject1.myFun2",
-              "name": "JSObject1.myFun2",
-              "collectionId": "Page1_JSObject1",
+              "id": "Page1_Api1",
+              "name": "Api1",
               "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  return Api1.run().then(() => Api2.run());\n}"
-              ],
+              "pluginType": "API",
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]

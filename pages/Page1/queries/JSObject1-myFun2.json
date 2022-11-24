@@ -19,12 +19,12 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  return Api1.run().then(() => Api2.run());\n}",
+      "body": "async () => {\n  return Api1.run().then(() => Api2.run().then(() => showAlert(\"fetchData!\")));\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  return Api1.run().then(() => Api2.run());\n}"
+      "async () => {\n  return Api1.run().then(() => Api2.run().then(() => showAlert(\"fetchData!\")));\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
