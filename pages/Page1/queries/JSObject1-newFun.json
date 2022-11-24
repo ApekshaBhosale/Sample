@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  return JSObject1.myFun1(\"2\", \"4\");\n}",
+      "body": "function () {\n  return JSObject1.myFun1(\"2\", \"4\");\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  return JSObject1.myFun1(\"2\", \"4\");\n}"
+      "function () {\n  return JSObject1.myFun1(\"2\", \"4\");\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
@@ -43,5 +43,5 @@
   },
   "id": "Page1_JSObject1.newFun",
   "deleted": false,
-  "gitSyncId": "6371f3abf494321301dcb512_637f0c056ccfce22692e1fea"
+  "gitSyncId": "6371f3abf494321301dcb512_637f5285b971d90bf4a7ab9b"
 }

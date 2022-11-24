@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "function (lol = \"123\", pop = \"456\") {\n  return \"** hey this is just a fun\";\n}",
+      "body": "function (lol, pop) {\n  return \"** hey this is just a fun\" + lol + pop;\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {},
@@ -37,7 +37,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "function (lol = \"123\", pop = \"456\") {\n  return \"** hey this is just a fun\";\n}"
+      "function (lol, pop) {\n  return \"** hey this is just a fun\" + lol + pop;\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
@@ -46,5 +46,5 @@
   },
   "id": "Page1_JSObject1.myFun1",
   "deleted": false,
-  "gitSyncId": "6371f3abf494321301dcb512_637f10766ccfce22692e2005"
+  "gitSyncId": "6371f3abf494321301dcb512_637f5285b971d90bf4a7ab9d"
 }
