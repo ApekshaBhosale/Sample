@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1290,
+          "bottomRow": 1292,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -77,16 +77,10 @@
                   "key": "childStylesheet.editActions.discardBorderRadius"
                 },
                 {
-                  "key": "tableData"
-                },
-                {
                   "key": "primaryColumns.id.computedValue"
                 },
                 {
                   "key": "primaryColumns.name.computedValue"
-                },
-                {
-                  "key": "primaryColumns.username.computedValue"
                 },
                 {
                   "key": "primaryColumns.email.computedValue"
@@ -95,13 +89,22 @@
                   "key": "primaryColumns.address.computedValue"
                 },
                 {
-                  "key": "primaryColumns.phone.computedValue"
+                  "key": "tableData"
                 },
                 {
-                  "key": "primaryColumns.website.computedValue"
+                  "key": "primaryColumns.status.computedValue"
                 },
                 {
-                  "key": "primaryColumns.company.computedValue"
+                  "key": "primaryColumns.gender.computedValue"
+                },
+                {
+                  "key": "primaryColumns.avatar.computedValue"
+                },
+                {
+                  "key": "primaryColumns.createdAt.computedValue"
+                },
+                {
+                  "key": "primaryColumns.updatedAt.computedValue"
                 }
               ],
               "leftColumn": 12,
@@ -146,12 +149,13 @@
               "columnOrder": [
                 "id",
                 "name",
-                "username",
                 "email",
                 "address",
-                "phone",
-                "website",
-                "company"
+                "status",
+                "gender",
+                "avatar",
+                "createdAt",
+                "updatedAt"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -223,34 +227,6 @@
                   "validation": {},
                   "cellBackground": ""
                 },
-                "username": {
-                  "allowCellWrapping": false,
-                  "index": 2,
-                  "width": 150,
-                  "originalId": "username",
-                  "id": "username",
-                  "alias": "username",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "username",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"username\"]))}}",
-                  "validation": {},
-                  "cellBackground": ""
-                },
                 "email": {
                   "allowCellWrapping": false,
                   "index": 3,
@@ -307,13 +283,13 @@
                   "validation": {},
                   "cellBackground": ""
                 },
-                "phone": {
+                "status": {
                   "allowCellWrapping": false,
-                  "index": 5,
+                  "index": 2,
                   "width": 150,
-                  "originalId": "phone",
-                  "id": "phone",
-                  "alias": "phone",
+                  "originalId": "status",
+                  "id": "status",
+                  "alias": "status",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -328,20 +304,20 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "phone",
+                  "label": "status",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"phone\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "website": {
+                "gender": {
                   "allowCellWrapping": false,
-                  "index": 6,
+                  "index": 3,
                   "width": 150,
-                  "originalId": "website",
-                  "id": "website",
-                  "alias": "website",
+                  "originalId": "gender",
+                  "id": "gender",
+                  "alias": "gender",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -356,23 +332,51 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "website",
+                  "label": "gender",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"website\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"gender\"]))}}",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "company": {
+                "avatar": {
+                  "allowCellWrapping": false,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "avatar",
+                  "id": "avatar",
+                  "alias": "avatar",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "avatar",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"avatar\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "createdAt": {
                   "allowCellWrapping": false,
                   "index": 7,
                   "width": 150,
-                  "originalId": "company",
-                  "id": "company",
-                  "alias": "company",
+                  "originalId": "createdAt",
+                  "id": "createdAt",
+                  "alias": "createdAt",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "date",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -384,10 +388,38 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "company",
+                  "label": "createdAt",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"company\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"createdAt\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "updatedAt": {
+                  "allowCellWrapping": false,
+                  "index": 8,
+                  "width": 150,
+                  "originalId": "updatedAt",
+                  "id": "updatedAt",
+                  "alias": "updatedAt",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "date",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "updatedAt",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"updatedAt\"]))}}",
                   "validation": {},
                   "cellBackground": ""
                 }
@@ -397,7 +429,7 @@
               "rightColumn": 49,
               "textSize": "0.875rem",
               "widgetId": "8fh2t7a7d7",
-              "tableData": "{{JSObject1.myFun2.data}}",
+              "tableData": "{{JSObject1.myFun2.data.users}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -622,6 +654,61 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
+            },
+            {
+              "widgetName": "Text3",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 91,
+              "bottomRow": 95,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 21.171875,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 13,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "{{JSObject1.newFun()}}",
+              "key": "lmzp2yuvxk",
+              "isDeprecated": false,
+              "rightColumn": 29,
+              "textAlign": "LEFT",
+              "dynamicHeight": "FIXED",
+              "widgetId": "wj5hd2fix3",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "fontSize": "1rem",
+              "minDynamicHeight": 4
             }
           ]
         },
@@ -631,11 +718,10 @@
               "id": "Page1_JSObject1.myFun2",
               "name": "JSObject1.myFun2",
               "collectionId": "Page1_JSObject1",
-              "clientSideExecution": true,
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  return Api1.run();\n}"
+                "async () => {\n  return Api1.run().then(() => Api2.run());\n}"
               ],
               "timeoutInMillisecond": 10000
             }

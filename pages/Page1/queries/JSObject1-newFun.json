@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun2",
-    "fullyQualifiedName": "JSObject2.myFun2",
+    "name": "newFun",
+    "fullyQualifiedName": "JSObject1.newFun",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,15 +14,15 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_JSObject2",
+    "collectionId": "Page1_JSObject1",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {}",
+      "body": "() => {\n  return JSObject1.myFun1(\"2\", \"4\");\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {}"
+      "() => {\n  return JSObject1.myFun1(\"2\", \"4\");\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_JSObject2.myFun2",
+  "id": "Page1_JSObject1.newFun",
   "deleted": false,
-  "gitSyncId": "6371f3abf494321301dcb512_637f0c0563b273098e4a233e"
+  "gitSyncId": "6371f3abf494321301dcb512_637f0c056ccfce22692e1fea"
 }

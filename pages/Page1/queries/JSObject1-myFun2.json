@@ -19,13 +19,12 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  return Api1.run();\n}",
+      "body": "async () => {\n  return Api1.run().then(() => Api2.run());\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },
     "executeOnLoad": true,
-    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -35,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  return Api1.run();\n}"
+      "async () => {\n  return Api1.run().then(() => Api2.run());\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
@@ -44,5 +43,5 @@
   },
   "id": "Page1_JSObject1.myFun2",
   "deleted": false,
-  "gitSyncId": "6371f3abf494321301dcb512_637b597a6983426f24c9c980"
+  "gitSyncId": "6371f3abf494321301dcb512_637f0c056ccfce22692e1fe9"
 }
