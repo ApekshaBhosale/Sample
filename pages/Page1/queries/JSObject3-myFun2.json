@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun1",
-    "fullyQualifiedName": "JSObject1.myFun1",
+    "name": "myFun2",
+    "fullyQualifiedName": "JSObject3.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,20 +14,18 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_JSObject1",
+    "collectionId": "Page1_JSObject3",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "function (lol, pop) {\n  return \"** hey this is just a fun!!!\" + lol + pop;\n}",
+      "body": "async () => {}",
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {},
-        {}
-      ],
-      "isAsync": false
+      "jsArguments": [],
+      "isAsync": true
     },
     "executeOnLoad": false,
+    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -37,14 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "function (lol, pop) {\n  return \"** hey this is just a fun!!!\" + lol + pop;\n}"
+      "async () => {}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_JSObject1.myFun1",
+  "id": "Page1_JSObject3.myFun2",
   "deleted": false,
-  "gitSyncId": "6371f3abf494321301dcb512_637f5285b971d90bf4a7ab9d"
+  "gitSyncId": "6371f3abf494321301dcb512_63be63fe62b0ca5778ab5d17"
 }

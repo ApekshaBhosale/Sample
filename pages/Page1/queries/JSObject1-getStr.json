@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  return Api2.run().then(() => showAlert(\"success!!\"));\n}",
+      "body": "() => {\n  return Api1.run().then(() => showAlert(\"success!!\"));\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  return Api2.run().then(() => showAlert(\"success!!\"));\n}"
+      "() => {\n  return Api1.run().then(() => showAlert(\"success!!\"));\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
