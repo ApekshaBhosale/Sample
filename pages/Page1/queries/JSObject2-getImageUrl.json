@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun1",
-    "fullyQualifiedName": "JSObject1.myFun1",
+    "name": "getImageUrl",
+    "fullyQualifiedName": "JSObject2.getImageUrl",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,17 +14,14 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_JSObject1",
+    "collectionId": "Page1_JSObject2",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "function (lol, pop) {\n  return \"** hey this is just a fun!!!!\" + lol + pop;\n}",
+      "body": "() => {\n  return \"https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/jcr:content/image.img.2048.medium.jpg/1647334259839.jpg\";\n}",
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {},
-        {}
-      ],
+      "jsArguments": [],
       "isAsync": false
     },
     "executeOnLoad": false,
@@ -37,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "function (lol, pop) {\n  return \"** hey this is just a fun!!!!\" + lol + pop;\n}"
+      "() => {\n  return \"https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/jcr:content/image.img.2048.medium.jpg/1647334259839.jpg\";\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_JSObject1.myFun1",
+  "id": "Page1_JSObject2.getImageUrl",
   "deleted": false,
-  "gitSyncId": "6371f3abf494321301dcb512_637f5285b971d90bf4a7ab9d"
+  "gitSyncId": "6371f3abf494321301dcb512_63d0c8510872b82edf7b373f"
 }

@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "newFun",
-    "fullyQualifiedName": "JSObject1.newFun",
+    "name": "newFun22",
+    "fullyQualifiedName": "JSObject1.newFun22",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_JSObject1.newFun",
+  "id": "Page1_JSObject1.newFun22",
   "deleted": false,
   "gitSyncId": "6371f3abf494321301dcb512_637f5285b971d90bf4a7ab9b"
 }

@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Api2",
+    "name": "Api3",
     "datasource": {
       "name": "Untitled Datasource 999",
       "pluginId": "restapi-plugin",
@@ -33,18 +33,18 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Api2",
+  "id": "Page1_Api3",
   "deleted": false,
-  "gitSyncId": "6371f3abf494321301dcb512_637f183a63b273098e4a239c"
+  "gitSyncId": "6371f3abf494321301dcb512_63c79276a9abc403e7a2a3ef"
 }

@@ -6,7 +6,6 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tmyVar1: [1,2,3,4],\n\tmyVar2: \"hello from the other side\",\n\tmyFun1(lol, pop) {\n\t\treturn \"** hey this is just a fun!!!\" + lol + pop;\n\t},\n\tmyFun2: async () => {\n\t\treturn Api1.run().then(() => Api2.run().then(() => showAlert(\"fetchData!\")));\n\t}, \n\tgetStr:() => {\n\t\treturn Api1.run().then(() => showAlert(\"success!!\"));\n\t},\n\tnewFun() {\n\t\treturn this.myFun1(\"2\", \"4\");\n\t},\n\tshowStr: () => {\n\t\treturn Input1.text;\n\t},\n\t\n}",
     "variables": [
       {
         "name": "myVar1",
