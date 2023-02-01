@@ -51,5 +51,8 @@ export default {
     "value": "1.30"
   }
 ];
+	},
+	getAudioLink: () => {
+		return "https://open.spotify.com/episode/4ydLAqIO0iGoeRYLuMX6xK?si=64ac49c2bfb3462a";
 	}
 }

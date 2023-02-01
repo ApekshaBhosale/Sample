@@ -6,7 +6,7 @@ export default {
 		//write code here
 	},
 	myFun2: async () => {
-		
+
 		//use async-await or promises
 	},
 	transfromData: () => {
@@ -17,5 +17,24 @@ export default {
 	},
 	getListData: () => {
 		return Api2.data.users;
+	},
+	getSliderData: () => {
+		return [
+			{
+				"value": 25,
+				"label": "25%"
+			},
+			{
+				"value": 50,
+				"label": "50%"
+			},
+			{
+				"value": 75,
+				"label": "75%"
+			}
+		];
+	},
+	getVideoURL: () => {
+		return "https://www.youtube.com/watch?v=YxWlaYCA8MU&ab_channel=YRF";
 	}
 }
