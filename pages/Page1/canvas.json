@@ -756,7 +756,7 @@
               },
               "disabledWhenInvalid": true,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 138,
+              "originalBottomRow": 101,
               "useSourceData": false,
               "schema": {
                 "__root_schema__": {
@@ -1623,9 +1623,9 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 140,
+              "originalTopRow": 131,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 194
+              "originalBottomRow": 185
             },
             {
               "boxShadow": "none",
@@ -1793,8 +1793,8 @@
               "labelAlignment": "left",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 195,
-              "originalBottomRow": 203,
+              "originalTopRow": 186,
+              "originalBottomRow": 194,
               "step": 1,
               "showMarksLabel": true
             },
